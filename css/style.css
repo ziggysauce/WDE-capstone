@@ -6,37 +6,67 @@ body {
   width: 100%;
 }
 
-.container {
+#container {
   border: 2px dotted red;
   height: 100%;
 }
 
 .navbar {
-  border: 2px dotted blue;
-  height: 5em;
+  height: 3em;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #FFF;
+  box-shadow: 0px 2px 5px #DBDBDB;
 }
 
-.intro {
+.navbuttons {
+  text-align: right;
+  padding-right: 2em;
+  height: 100%;
+}
+
+button {
+  height: 100%;
+  background-color: #FFF;
+  border: none;
+}
+
+button:hover {
+  background-color: #DBDBDB;
+}
+
+button a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #000;
+}
+
+#intro {
+  border: 2px dotted green;
+  height: 100%;
+  padding-top: 3em;
+}
+
+#aboutme {
+  padding-top: 3em;
   border: 2px dotted green;
   height: 100%;
 }
 
-.aboutme {
+#techskills {
   border: 2px dotted green;
   height: 100%;
 }
 
-.techskills {
+#projectlist {
+  padding-top: 3em;
   border: 2px dotted green;
   height: 100%;
 }
 
-.projectlist {
-  border: 2px dotted green;
-  height: 100%;
-}
-
-.contactme {
+#contactme {
   border: 2px dotted green;
   height: 100%;
   display: flex;
@@ -47,10 +77,6 @@ body {
 .contactmedia {
   display: flex;
   flex-direction: row;
-}
-
-#mediaicons {
-
 }
 
 #propic {
