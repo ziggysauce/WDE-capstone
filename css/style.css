@@ -1,0 +1,42 @@
+/* CSS for portfolio */
+
+/* Add media quieries */
+
+.container {
+  border: 2px dotted red;
+  height: 100%;
+}
+
+.navbar {
+  border: 2px dotted blue;
+  height: 5em;
+}
+
+.intro {
+  border: 2px dotted green;
+  height: 100%;
+}
+
+.aboutme {
+  border: 2px dotted green;
+  height: 100%;
+}
+
+.techskills {
+  border: 2px dotted green;
+  height: 100%;
+}
+
+.projectlist {
+  border: 2px dotted green;
+  height: 100%;
+}
+
+.contactme {
+  border: 2px dotted green;
+  height: 100%;
+}
+
+#propic {
+  width: 300px;
+}
