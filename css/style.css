@@ -2,6 +2,10 @@
 
 /* Add media quieries */
 
+body {
+  width: 100%;
+}
+
 .container {
   border: 2px dotted red;
   height: 100%;
@@ -35,8 +39,45 @@
 .contactme {
   border: 2px dotted green;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactmedia {
+  display: flex;
+  flex-direction: row;
+}
+
+#mediaicons {
+
 }
 
 #propic {
   width: 300px;
+}
+
+footer {
+	height: 5em;
+  width: 100%;
+  left: 0;
+  right: 0;
+  position: absolute;
+  padding: 25px 0px;
+	background-color: #000000;
+}
+
+footer i {
+  border: 2px red dotted;
+  width: 2em;
+  text-align: center;
+  color: #555;
+}
+
+footer i:hover {
+  color: #C3C3C3;
+}
+
+#email {
+  color: #555;
 }
