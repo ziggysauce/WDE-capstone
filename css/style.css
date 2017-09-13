@@ -121,7 +121,7 @@ button a {
 }
 
 #aboutme {
-  padding-top: 4em;
+  padding-top: 2em;
   border: 2px dotted green;
   height: 100vh;
   display: flex;
@@ -167,10 +167,13 @@ button a {
 
 /*Project Portfolio*/
 #projectlist {
-  padding-top: 4em;
+  padding-top: 2em;
   border: 2px dotted green;
-  height: 100vh;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #projectlist ul {
@@ -187,8 +190,9 @@ button a {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 10px;
-  box-shadow: 3px 3px 5px #DBDBDB;
+  margin: 15px;
+  box-shadow: 5px 5px 5px #B9B9B9;
+  position: relative;
 }
 
 #projectlist span {
@@ -228,15 +232,50 @@ button a {
 
 /*Contact Section*/
 #contactme {
+  border: 2px solid magenta;
+  padding-top: 3em;
   height: 100vh;
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
-#email {
+#contactinfo {
+  border: 2px solid orange;
+  height: 80%;
+  width: 60%;
+  min-width: 20em;
+  margin-left: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.email {
   margin: 10px;
-  border: 2px solid red;
+  height: 3em;
+  width: 15em;
+  border: 2px solid #000;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.5s ease-in;
+  color: #000;
+}
+
+.email i {
+  padding: 10px;
+}
+
+.email:hover {
+  border-radius: 50px;
+  background: #000;
+  color: #FFF;
+  transition: all 0.5s ease-in;
 }
 
 /*Footer Section*/
