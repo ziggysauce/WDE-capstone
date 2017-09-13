@@ -116,6 +116,10 @@ button a {
 }
 
 /*About Tab*/
+#propic {
+  width: 300px;
+}
+
 #aboutme {
   padding-top: 4em;
   border: 2px dotted green;
@@ -166,11 +170,37 @@ button a {
   padding-top: 4em;
   border: 2px dotted green;
   height: 100vh;
+  position: relative;
+}
+
+#projectlist ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#projectlist li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px;
+  box-shadow: 3px 3px 5px #DBDBDB;
+}
+
+.projectpics {
+  width: 350px;
 }
 
 /*Contact Section*/
 #contactme {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 #email {
@@ -192,10 +222,6 @@ button a {
   flex-direction: row;
 }
 
-#propic {
-  width: 300px;
-}
-
 footer {
 	height: 5em;
   width: 100%;
@@ -207,6 +233,7 @@ footer {
 footer i {
   border: 2px red dotted;
   width: 2em;
+  padding: 0px 20px;
   text-align: center;
   color: #555;
 }
