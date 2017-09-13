@@ -16,14 +16,23 @@ body {
   height: 100%;
 }
 
+/*Navigation Bar*/
 .navbar {
   height: 3em;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   position: fixed;
   left: 0;
   top: 0;
   background-color: #FFF;
   box-shadow: 0px 2px 5px #DBDBDB;
+  z-index: 1;
+}
+
+.navbar p {
+  padding-left: 2em;
 }
 
 .navbuttons {
@@ -65,36 +74,48 @@ button a {
   color: #000;
 }
 
+/*Home Tab*/
 #intro {
   border: 2px dotted green;
   height: 100vh;
-  padding-top: 3em;
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.title {
+.introbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titlebox {
   display: flex;
   flex-direction: row;
-  width: 25vw;
+  justify-content: center;
+  align-items: center;
+  height: 2em;
+  padding: 10px;
+  margin-top: -4em;
 }
 
-#intro h1 {
-  border: 2px solid #000;
+#vertline {
+  width: 2px;
+  height: 100%;
+  margin: 0px 10px;
+  background: #000;
+}
+
+#hello {
   padding: 25px 30px;
+  font-size: 100px;
+  border: 2px solid #000;
 }
 
-#intro h3 {
-  width: 100%;
-}
-
-#name {
-  border-right: 2px solid #000;
-}
-
+/*About Tab*/
 #aboutme {
   padding-top: 4em;
   border: 2px dotted green;
@@ -102,6 +123,7 @@ button a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin: 0px 10px;
 }
 
@@ -110,18 +132,54 @@ button a {
   padding: 0px 50px;
 }
 
+/*Toolkit*/
 #techskills {
   border: 2px dotted green;
-  height: 100%;
+  padding-bottom: 2em;
+  height: 8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+#techskills ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+}
+
+#techskills li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#techskills span {
+  padding-top: 10px;
+}
+
+/*Project Portfolio*/
 #projectlist {
   padding-top: 4em;
   border: 2px dotted green;
   height: 100vh;
 }
 
+/*Contact Section*/
 #contactme {
+  height: 100vh;
+}
+
+#email {
+  margin: 10px;
+  border: 2px solid red;
+}
+
+/*Footer Section*/
+#socmedia {
   border: 2px dotted green;
   height: 100%;
   display: flex;
@@ -157,6 +215,6 @@ footer i:hover {
   color: #C3C3C3;
 }
 
-#email {
+#footbottom {
   color: #555;
 }

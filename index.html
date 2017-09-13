@@ -6,12 +6,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <title>Homepage</title>
   </head>
   <body>
     <div id="container">
       <!-- Navigation Bar -->
       <div class="navbar">
+        <p>DAN NGUYEN</p>
         <div class="navbuttons">
           <button type="button" name="home"><a href="#container">Home</a></button>
           <button type="button" name="about"><a href="#aboutme">About</a></button>
@@ -21,27 +23,31 @@
       </div>
       <!-- Introduction -->
       <div id="intro">
-        <h1>Why, hello there.</h1>
-        <div class="title">
-          <h3 id="name">Daniel Nguyen</h3>
-          <h3>Web Developer</h3>
+        <div class="introbox">
+          <h1 id="hello">HELLO.</h1>
+          <div class="titlebox">
+            <h3>DAN NGUYEN</h3>
+            <span id="vertline"></span>
+            <h3>WEB DEVELOPER</h3>
+          </div>
         </div>
       </div>
       <!-- About Me Section -->
       <div id="aboutme">
         <img id="propic" src="images/propic.jpg" alt="Profile Picture of Dan Nguyen">
-        <h2>About</h2>
-        <p>Hi, my name is Daniel Nguyen and I'm an aspiring developer originally from Metro Detroit but currently located in Washington, D.C. I'm fully self-taught, currently working on refining my skills towards becoming a fullstack developer.</p>
+        <h2>ABOUT</h2>
+        <p>I'm an aspiring developer originally from Metro Detroit but currently located in Washington, D.C. I'm fully self-taught, currently working on refining my skills towards becoming a fullstack developer.</p>
         <p>I strive to add flavor to my work in creating fully functional apps, efficiency in writing code, speed optimization, and seamless user experience with design that is pleasing to the eye. I am continuously learning and always pushing towards mastering my craft. If you like what you see, don't hesitate to contact me and we can start on our next project together!</p>
       </div>
       <!-- Programming Languages -->
       <div id="techskills">
+        <h2>MY TOOLKIT</h2>
         <ul>
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>JavaScript</li>
-          <li>Node.js</li>
-          <li>Python</li>
+          <li><i class="devicon-html5-plain"></i><span>HTML5</span></li>
+          <li><i class="devicon-css3-plain"></i><span>CSS3</span></li>
+          <li><i class="devicon-javascript-plain"></i><span>JavaScript</span></li>
+          <li><i class="devicon-nodejs-plain"></i><span>Node.js</span></li>
+          <li><i class="devicon-python-plain"></i><span>Python</span></li>
         </ul>
       </div>
       <!-- List of Projects -->
@@ -55,16 +61,20 @@
           <li>Overwatch Hero Overview</li>
         </ul>
       </div>
+      <div id="contactme">
+        <!-- Re-format with backend contact form -->
+        <p><a id="email" href="mailto:dtn3423@gmail.com"><i class="fa fa-envelope-o fa-lg"></i></a>dtn3423@gmail.com</p>
+      </div>
     </div>
     <!-- Footer with Contact Information -->
     <footer>
-      <div id="contactme">
+      <div id="socmedia">
         <div class="contactmedia">
           <a href="https://www.linkedin.com/in/daniel-nguyen-1a041495/" target="_blank"><i class="fa fa-linkedin-square" style="font-size: 1.5em;"></i></a>
           <a href="https://github.com/ziggysauce" target="_blank"><i class="fa fa-github" style="font-size: 1.5em;"></i></a>
           <a href="https://codepen.io/ziggysauce/" target="_blank"><i class="fa fa-codepen" style="font-size: 1.5em;"></i></a>
         </div>
-        <p id="email"><a href="mailto:dtn3423@gmail.com"><i class="fa fa-envelope-o fa-lg"></i></a>dtn3423@gmail.com</p>
+        <p id="footbottom">Created by Daniel Nguyen.</p>
       </div>
     </footer>
     <script src="https://use.fontawesome.com/fd9b76c288.js"></script>
