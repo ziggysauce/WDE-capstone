@@ -12,7 +12,6 @@ body {
 }
 
 #container {
-  border: 2px dotted red;
   height: 100%;
 }
 
@@ -66,17 +65,17 @@ button:hover:after {
 
 button:hover {
   background-color: #DBDBDB;
+  cursor: pointer;
 }
 
-button a {
+a button {
   text-decoration: none;
-  font-size: 2em;
+  font-size: 1em;
   color: #000;
 }
 
 /*Home Tab*/
 #intro {
-  border: 2px dotted green;
   height: 100vh;
   display: flex;
   position: relative;
@@ -111,7 +110,7 @@ button a {
 
 #hello {
   padding: 25px 30px;
-  font-size: 100px;
+  font-size: 6em;
   border: 2px solid #000;
 }
 
@@ -122,7 +121,6 @@ button a {
 
 #aboutme {
   padding-top: 2em;
-  border: 2px dotted green;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -138,9 +136,8 @@ button a {
 
 /*Toolkit*/
 #techskills {
-  border: 2px dotted green;
   padding-bottom: 2em;
-  height: 8em;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -159,16 +156,16 @@ button a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 2em;
 }
 
 #techskills span {
-  padding-top: 10px;
+  /*padding-top: 10px;*/
 }
 
 /*Project Portfolio*/
 #projectlist {
   padding-top: 2em;
-  border: 2px dotted green;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -280,11 +277,11 @@ button a {
 
 /*Footer Section*/
 #socmedia {
-  border: 2px dotted green;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .contactmedia {
@@ -301,9 +298,8 @@ footer {
 }
 
 footer i {
-  border: 2px red dotted;
-  width: 2em;
-  padding: 0px 20px;
+  width: 1em;
+  padding: 0px 10px;
   text-align: center;
   color: #555;
 }
