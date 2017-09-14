@@ -11,6 +11,18 @@ body {
   max-width: 100%;
 }
 
+body::-webkit-scrollbar {
+  width: .5em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #F2F2F2;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #555;
+}
+
 #container {
   height: 100%;
 }
@@ -27,13 +39,14 @@ body {
   position: fixed;
   left: 0;
   top: 0;
-  background-color: #FFF;
-  box-shadow: 0px 2px 5px #DBDBDB;
+  background-color: #DBDBDB;
+  box-shadow: 0px 2px 5px #868686;
   z-index: 1;
 }
 
 .navbar p {
   padding-left: 2em;
+  color: #2F4763;
 }
 
 .navbuttons {
@@ -44,7 +57,7 @@ body {
 
 button {
   height: 100%;
-  background-color: #FFF;
+  background-color: #DBDBDB;
   border: none;
   display: inline-block;
   position: relative;
@@ -62,18 +75,19 @@ button:after {
 
 button:hover:after {
   width: 100%;
-  background-color: #141414;
+  background-color: #2F4763;
 }
 
 button:hover {
-  background-color: #DBDBDB;
+  background-color: #FFB741;
   cursor: pointer;
+  color: #FFF;
 }
 
 a button {
   text-decoration: none;
   font-size: 1em;
-  color: #000;
+  color: #2F4763;
 }
 
 /*Home Tab*/
@@ -238,15 +252,14 @@ a button {
 #projectlist li:hover span{
   visibility: visible;
   opacity: 1;
-  background: rgba(120, 120, 120, 0.8);
-  color: #FFF;
+  background: rgba(47, 71, 99, 0.8);
   width: 350px;
   height: 200px;
 }
 
 #projectlist a {
   font-size: 2em;
-  color: #000;
+  color: #FFB741;
   height: 100%;
   width: 100%;
   display: flex;
@@ -280,7 +293,11 @@ a button {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+}
+
+#contactinfo h1 {
+  color: #FFB741;
 }
 
 .email {
