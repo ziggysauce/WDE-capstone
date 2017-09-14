@@ -8,7 +8,7 @@ html, body {
 }
 
 body {
-  width: 100%;
+  max-width: 100%;
 }
 
 #container {
@@ -19,6 +19,8 @@ body {
 .navbar {
   height: 3em;
   width: 100%;
+  overflow-x: hidden;
+  max-width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -83,6 +85,8 @@ a button {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background: #2F4763;
+  color: #FFF;
 }
 
 .introbox {
@@ -105,72 +109,100 @@ a button {
   width: 2px;
   height: 100%;
   margin: 0px 10px;
-  background: #000;
+  background: #FFF;
 }
 
 #hello {
   padding: 25px 30px;
   font-size: 6em;
-  border: 2px solid #000;
+  border: 2px solid #FFB741;
+  color: #FFB741;
 }
 
 /*About Tab*/
 #propic {
-  width: 300px;
+  width: 25em;
+  box-shadow: 5px 5px 5px #B9B9B9;
+}
+
+#aboutbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 #aboutme {
-  padding-top: 2em;
-  height: 100vh;
+  min-width: 400px;
+  padding: 6em 0em;
   display: flex;
+  flex-grow: 2;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0px 10px;
+  background: #F2F2F2;
+}
+
+#aboutme h2 {
+  color: #FFB741;
 }
 
 #aboutme p {
   max-width: 800px;
   padding: 0px 50px;
+  color: #2F4763;
 }
 
-/*Toolkit*/
+/*Technologies*/
 #techskills {
-  padding-bottom: 2em;
-  height: 100%;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #FFB741;
+  color: #2F4763;
+}
+
+#techskills h2 {
+  color: #F2F2F2;
+}
+
+#techskills ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#techskills ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 80%;
-}
-
 #techskills li {
-  list-style-type: none;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 2em;
+  justify-content: center;
+  margin: 10px 30px 10px 0px;
+}
+
+#techskills i {
+  font-size: 3em;
 }
 
 #techskills span {
-  /*padding-top: 10px;*/
+  padding-top: 10px;
+  font-size: 1em;
 }
 
 /*Project Portfolio*/
 #projectlist {
-  padding-top: 2em;
+  padding: 4em 0em;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#projectlist h2 {
+  color: #2F4763;
 }
 
 #projectlist ul {
@@ -231,16 +263,16 @@ a button {
 
 /*Contact Section*/
 #contactme {
-  border: 2px solid magenta;
   padding-top: 3em;
-  height: 100vh;
+  height: calc(100vh - 11em);
   display: flex;
   flex-direction: column;
   position: relative;
+  background: #2F4763;
+  color: #F2F2F2;
 }
 
 #contactinfo {
-  border: 2px solid orange;
   height: 80%;
   width: 60%;
   min-width: 20em;
@@ -255,7 +287,7 @@ a button {
   margin: 10px;
   height: 3em;
   width: 15em;
-  border: 2px solid #000;
+  border: 2px solid #FFB741;
   border-radius: 5px;
   display: flex;
   flex-direction: row;
@@ -263,7 +295,7 @@ a button {
   align-items: center;
   text-decoration: none;
   transition: all 0.5s ease-in;
-  color: #000;
+  color: #F2F2F2;
 }
 
 .email i {
@@ -272,9 +304,10 @@ a button {
 
 .email:hover {
   border-radius: 50px;
-  background: #000;
-  color: #FFF;
+  background: #F2F2F2;
+  color: #2F4763;
   transition: all 0.5s ease-in;
+  border-color: #FFB741;
 }
 
 /*Footer Section*/
@@ -307,7 +340,7 @@ footer i {
 }
 
 footer i:hover {
-  color: #C3C3C3;
+  color: #F2F2F2;
 }
 
 #footbottom {
