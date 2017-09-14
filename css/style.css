@@ -2,6 +2,17 @@
 
 /* Add media quieries */
 
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Molengo|Sigmar+One');
+
+p, h3, span, a {
+  font-family: 'Molengo', sans-serif;
+}
+
+h2, h1 {
+  font-family: 'Sigmar One', cursive;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -132,7 +143,7 @@ a button {
 #hello {
   padding: 25px 30px;
   font-size: 6em;
-  border: 2px solid #FFB741;
+  border: 4px solid #FFB741;
   color: #FFB741;
 }
 
@@ -157,12 +168,23 @@ a button {
 
 #aboutme h2 {
   color: #FFB741;
+  font-size: 3em;
+  margin: 0;
 }
 
 #aboutme p {
   max-width: 800px;
   padding: 0px 50px;
   color: #2F4763;
+}
+
+#senddown {
+  text-decoration: none;
+  color: #FFB741;
+}
+
+#senddown:hover {
+  text-decoration: underline;
 }
 
 /*Technologies*/
@@ -208,6 +230,8 @@ a button {
 
 #projectlist h2 {
   color: #2F4763;
+  font-size: 3em;
+  margin: 0;
 }
 
 #projectlist ul {
@@ -279,6 +303,8 @@ a button {
 
 #contactinfo h1 {
   color: #FFB741;
+  margin: 0;
+  font-size: 4em;
 }
 
 .email {
