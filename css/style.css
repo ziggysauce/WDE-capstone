@@ -27,14 +27,23 @@ body::-webkit-scrollbar-track {
   height: 100%;
 }
 
+/*Flex*/
+.flexrow{
+  display: flex;
+  flex-direction: row;
+}
+
+.flexcol, #techskills li, #projectlist li, #projectlist a {
+  display: flex;
+  flex-direction: column;
+}
+
 /*Navigation Bar*/
 .navbar {
   height: 3em;
   width: 100%;
   overflow-x: hidden;
   max-width: 100%;
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
   position: fixed;
   left: 0;
@@ -93,9 +102,7 @@ a button {
 /*Home Tab*/
 #intro {
   height: 100vh;
-  display: flex;
   position: relative;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -104,14 +111,10 @@ a button {
 }
 
 .introbox {
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
 .titlebox {
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 2em;
@@ -140,17 +143,13 @@ a button {
 }
 
 #aboutbox {
-  display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
 }
 
 #aboutme {
   min-width: 400px;
   padding: 6em 0em;
-  display: flex;
   flex-grow: 2;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   background: #F2F2F2;
@@ -168,9 +167,7 @@ a button {
 
 /*Technologies*/
 #techskills {
-  display: flex;
   flex-grow: 1;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #FFB741;
@@ -182,15 +179,11 @@ a button {
 }
 
 #techskills ul {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 #techskills li {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 10px 30px 10px 0px;
@@ -209,8 +202,6 @@ a button {
 #projectlist {
   padding: 4em 0em;
   position: relative;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -220,16 +211,12 @@ a button {
 }
 
 #projectlist ul {
-  display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 #projectlist li {
   list-style-type: none;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -262,8 +249,6 @@ a button {
   color: #FFB741;
   height: 100%;
   width: 100%;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-decoration: none;
@@ -278,8 +263,6 @@ a button {
 #contactme {
   padding-top: 3em;
   height: calc(100vh - 11em);
-  display: flex;
-  flex-direction: column;
   position: relative;
   background: #2F4763;
   color: #F2F2F2;
@@ -291,8 +274,6 @@ a button {
   min-width: 20em;
   margin-left: 30px;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 
@@ -306,8 +287,6 @@ a button {
   width: 15em;
   border: 2px solid #FFB741;
   border-radius: 5px;
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   text-decoration: none;
@@ -330,15 +309,8 @@ a button {
 /*Footer Section*/
 #socmedia {
   height: 100%;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.contactmedia {
-  display: flex;
-  flex-direction: row;
 }
 
 footer {

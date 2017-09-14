@@ -12,7 +12,7 @@
   <body>
     <div id="container">
       <!-- Navigation Bar -->
-      <div class="navbar">
+      <div class="navbar flexrow">
         <p>DAN NGUYEN</p>
         <div class="navbuttons">
           <a href="#container"><button type="button" name="home">Home</button></a>
@@ -22,10 +22,10 @@
         </div>
       </div>
       <!-- Introduction -->
-      <div id="intro">
-        <div class="introbox">
+      <div id="intro" class="flexcol">
+        <div class="introbox flexcol">
           <h1 id="hello">HELLO.</h1>
-          <div class="titlebox">
+          <div class="titlebox flexrow">
             <h3>DAN NGUYEN</h3>
             <span id="vertline"></span>
             <h3>WEB DEVELOPER</h3>
@@ -33,17 +33,17 @@
         </div>
       </div>
       <!-- About Me Section -->
-      <div id="aboutbox">
-        <div id="aboutme">
+      <div id="aboutbox" class="flexrow">
+        <div id="aboutme" class="flexcol">
           <img id="propic" src="images/propic.jpg" alt="Profile Picture of Dan Nguyen">
           <h2>ABOUT</h2>
           <p>I'm an aspiring developer from Metro Detroit now located in Washington, D.C. I'm self-taught, currently working on refining my skills towards becoming a fullstack developer.</p>
           <p>I strive to add flavor to my work in creating fully functional apps, efficiency in writing code, speed optimization, and seamless user experience with design that is pleasing to the eye. I'm continuously learning and always pushing towards mastering my craft. If you like what you see, don't hesitate to contact me and we can start on our next project together!</p>
         </div>
         <!-- Programming Languages -->
-        <div id="techskills">
+        <div id="techskills" class="flexcol">
           <h2>TECHNOLOGIES</h2>
-          <ul>
+          <ul class="flexcol">
             <li><i class="devicon-html5-plain"></i><span>HTML5</span></li>
             <li><i class="devicon-css3-plain"></i><span>CSS3</span></li>
             <li><i class="devicon-javascript-plain"></i><span>JavaScript</span></li>
@@ -54,9 +54,9 @@
         </div>
       </div>
       <!-- List of Projects -->
-      <div id="projectlist">
+      <div id="projectlist" class="flexcol">
         <h2>PROJECTS</h2>
-        <ul>
+        <ul class="flexrow">
           <li>
             <img class="projectpics" src="images/tribute.png" alt="Tribute Page">
             <span>
@@ -97,17 +97,17 @@
       </div>
       <div id="contactme">
         <!-- Re-format with backend contact form -->
-        <div id="contactinfo">
+        <div id="contactinfo" class="flexcol">
           <h1>Interested?</h1>
           <p>Get in touch if you would like to collaborate on your next idea!</p>
-          <a class="email" href="mailto:dtn3423@gmail.com"><i class="fa fa-paper-plane-o" style="font-size: 2em;"></i>dtn3423@gmail.com</a>
+          <a class="email flexrow" href="mailto:dtn3423@gmail.com"><i class="fa fa-paper-plane-o" style="font-size: 2em;"></i>dtn3423@gmail.com</a>
         </div>
       </div>
     </div>
     <!-- Footer with Contact Information -->
     <footer>
-      <div id="socmedia">
-        <div class="contactmedia">
+      <div id="socmedia" class="flexcol">
+        <div class="contactmedia flexrow">
           <a href="https://www.linkedin.com/in/daniel-nguyen-1a041495/" target="_blank"><i class="fa fa-linkedin-square" style="font-size: 1.5em;"></i></a>
           <a href="https://github.com/ziggysauce" target="_blank"><i class="fa fa-github" style="font-size: 1.5em;"></i></a>
           <a href="https://codepen.io/ziggysauce/" target="_blank"><i class="fa fa-codepen" style="font-size: 1.5em;"></i></a>
