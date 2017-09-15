@@ -90,9 +90,9 @@ body::-webkit-scrollbar-track {
 .navbuttons li {
   background-color: #DBDBDB;
   display: inline-block;
+  padding: 1em;
   width: 100%;
   height: 100%;
-  padding: 10px;
 }
 
 .navbuttons li:after {
@@ -116,9 +116,7 @@ body::-webkit-scrollbar-track {
   color: #FFF;
 }
 
-.navbuttons i {
-  font-size: 2em;
-  color: #2F4763;
+.navbuttons a:last-child {
   display: none;
 }
 
@@ -404,9 +402,14 @@ footer i:hover {
   .navbuttons a:not(:last-child) {
     display: none;
   }
-  .navbuttons i {
-    display: flex;
-    height: 100%;
+  .navbuttons a:last-child {
+    display: inline-flex;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #2F4763;
+  }
+  .navbuttons li {
+    padding: .5em;
   }
   .navbuttons li:after {
     display: none;
@@ -414,17 +417,16 @@ footer i:hover {
   .mobile {
     display: flex;
     flex-direction: column;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    text-align: center;
     width: 100%;
     height: 100%;
-    position: absolute;
-  }
-  .hideme {
-    display: none;
+    overflow-y: hidden;
+    position: fixed;
   }
   .showme {
     display: flex !important;
+
   }
 }
