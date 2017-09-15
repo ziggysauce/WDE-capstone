@@ -1,7 +1,5 @@
 /* CSS for portfolio */
 
-/* Add media quieries */
-
 /*Fonts*/
 @import url('https://fonts.googleapis.com/css?family=Molengo|Sigmar+One');
 
@@ -20,6 +18,7 @@ html, body {
 
 body {
   max-width: 100%;
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -56,6 +55,7 @@ body::-webkit-scrollbar-track {
   overflow-x: hidden;
   max-width: 100%;
   justify-content: space-between;
+  align-items: center;
   position: fixed;
   left: 0;
   top: 0;
@@ -70,20 +70,32 @@ body::-webkit-scrollbar-track {
 }
 
 .navbuttons {
-  text-align: right;
   padding-right: 2em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   height: 100%;
+  z-index: 5;
 }
 
-button {
+.navbuttons a {
+  width: 100%;
   height: 100%;
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 1em;
+  color: #2F4763;
+}
+
+.navbuttons li {
   background-color: #DBDBDB;
-  border: none;
   display: inline-block;
-  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
 }
 
-button:after {
+.navbuttons li:after {
   content: '';
   display: block;
   margin: auto;
@@ -93,21 +105,21 @@ button:after {
   transition: width .5s ease, background-color 0.5s ease;
 }
 
-button:hover:after {
+.navbuttons li:hover:after {
   width: 100%;
   background-color: #2F4763;
 }
 
-button:hover {
+.navbuttons li:hover {
   background-color: #FFB741;
   cursor: pointer;
   color: #FFF;
 }
 
-a button {
-  text-decoration: none;
-  font-size: 1em;
+.navbuttons i {
+  font-size: 2em;
   color: #2F4763;
+  display: none;
 }
 
 /*Home Tab*/
@@ -360,4 +372,59 @@ footer i:hover {
 
 #footbottom {
   color: #555;
+}
+
+/* Add media quieries */
+@media screen and (max-width:600px) {
+  h1 {
+    font-size: 2em !important;
+  }
+  h2, h3 {
+    font-size: 1.5em !important;
+  }
+  #hello {
+    font-size: 3em !important;
+  }
+  .titlebox {
+    margin: 0;
+    padding: 0;
+  }
+  .projectpics {
+    width: 275px;
+    height: 150px;;
+  }
+  #projectlist li:hover span{
+    width: 275px;
+    height: 150px;
+  }
+  #projectlist a {
+    font-size: 1.5em;
+  }
+  /* Mobile Nav Bar */
+  .navbuttons a:not(:last-child) {
+    display: none;
+  }
+  .navbuttons i {
+    display: flex;
+    height: 100%;
+  }
+  .navbuttons li:after {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  .hideme {
+    display: none;
+  }
+  .showme {
+    display: flex !important;
+  }
 }
