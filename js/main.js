@@ -1,6 +1,7 @@
 $(document).ready(function() {
   navToggle();
   iconToggle();
+  scroll();
 });
 
 function navToggle() {
@@ -20,7 +21,14 @@ function navToggle() {
 };
 
 function iconToggle() {
-  $('.navicon').click(function() {
+  $('.navbuttons').click(function() {
     $(this).toggleClass("active");
+  });
+};
+
+function scroll() {
+  $('.scroll').click(function(dest){
+    dest.preventDefault();
+    $('html, body').animate({scrollTop:$(this.hash).offset().top}, 500)
   });
 };
