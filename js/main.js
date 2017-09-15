@@ -1,5 +1,6 @@
 $(document).ready(function() {
   navToggle();
+  iconToggle();
 });
 
 function navToggle() {
@@ -15,5 +16,11 @@ function navToggle() {
       $('.navbar p').show();
       navToggle();
     });
+  });
+};
+
+function iconToggle() {
+  $('.navicon').click(function() {
+    $(this).toggleClass("active");
   });
 };
