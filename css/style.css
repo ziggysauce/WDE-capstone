@@ -77,30 +77,30 @@ body::-webkit-scrollbar-track {
   height: 100%;
 }
 
-.navbuttons a {
+.navbuttons li {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
-  font-size: 1em;
-  color: #2F4763;
   height: 100%;
   width: 100%;
   padding: 0px 10px;
 }
 
-.navbuttons li {
+.navbuttons a {
   background-color: #DBDBDB;
   display: inline-block;
   align-items: center;
   text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  color: #2F4763;
   width: 100%;
   height: 100%;
   padding: 10px;
 }
 
-.navbuttons li:after {
+.navbuttons a:after {
   content: '';
   display: block;
   margin: auto;
@@ -112,18 +112,18 @@ body::-webkit-scrollbar-track {
   -moz-transition: width .5s ease, background-color 0.5s ease;
 }
 
-.navbuttons li:hover:after {
+.navbuttons a:hover:after {
   width: 100%;
   background-color: #2F4763;
 }
 
-.navbuttons li:hover {
+.navbuttons a:hover {
   background-color: #FFB741;
   cursor: pointer;
   color: #FFF;
 }
 
-.navbuttons a:last-child {
+.navbuttons li:last-child {
   display: none;
 }
 
@@ -407,23 +407,23 @@ footer i:hover {
     font-size: 1.5em;
   }
   /* Mobile Nav Bar */
-  .navbuttons a:not(:last-child) {
+  .navbuttons li:not(:last-child) {
     display: none;
   }
-  .navbuttons a:last-child {
+  .navbuttons li:last-child {
     display: inline-flex;
     text-decoration: none;
     font-size: 1.5em;
     color: #2F4763;
   }
-  .navbuttons li {
+  .navbuttons a {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
     font-size: 2em;
   }
-  .navbuttons li:after {
+  .navbuttons a:after {
     display: none;
   }
   .mobile {

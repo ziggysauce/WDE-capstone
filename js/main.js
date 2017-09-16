@@ -7,13 +7,13 @@ function navToggle() {
   $('.navicon').click(function() {
     $('.navbar').addClass(' mobile');
     $('.navbuttons').addClass(' response');
-    $('.navbuttons a').addClass(' showme');
+    $('.navbuttons li').addClass(' showme');
     $('.navbar p').hide();
     $('.navicon').addClass("active");
     $('a').click(function() {
       $('.navbar').removeClass(' mobile');
       $('.navbuttons').removeClass(' response');
-      $('.navbuttons a').removeClass(' showme');
+      $('.navbuttons li').removeClass(' showme');
       $('.navbar p').show();
       $('.navicon').removeClass("active");
       navToggle();
