@@ -244,7 +244,6 @@ body::-webkit-scrollbar-track {
   position: relative;
   justify-content: center;
   align-items: center;
-  border: 2px solid red;
 }
 
 #projectlist h2 {
@@ -257,12 +256,10 @@ body::-webkit-scrollbar-track {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  border: 2px solid blue;
   margin-right: 30px;
 }
 
 #projectlist li {
-  border: 2px solid green;
   list-style-type: none;
   justify-content: center;
   align-items: center;
