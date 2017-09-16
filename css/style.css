@@ -272,8 +272,6 @@ body::-webkit-scrollbar-track {
   opacity: 0;
   transition: all 0.5s ease;
   position: absolute;
-  left: 1;
-  top: 0;
   width: 350px;
   height: 200px;
 }
@@ -454,16 +452,13 @@ footer i:hover {
   }
   .iconbar:nth-of-type(1) {
       top: -6px;
-      color: #2F4763;
       background: #2F4763;
   }.iconbar:nth-of-type(2) {
       top: 1px;
-      color: #2F4763;
       background: #2F4763;
   }
   .iconbar:nth-of-type(3) {
       top: 8px;
-      color: #2F4763;
       background: #2F4763;
   }
   .iconbar {
