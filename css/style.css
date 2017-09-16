@@ -244,6 +244,7 @@ body::-webkit-scrollbar-track {
   position: relative;
   justify-content: center;
   align-items: center;
+  border: 2px solid red;
 }
 
 #projectlist h2 {
@@ -255,13 +256,16 @@ body::-webkit-scrollbar-track {
 #projectlist ul {
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  border: 2px solid blue;
+  margin-right: 30px;
 }
 
 #projectlist li {
+  border: 2px solid green;
   list-style-type: none;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   margin: 15px;
   box-shadow: 5px 5px 5px #B9B9B9;
   position: relative;
@@ -271,6 +275,8 @@ body::-webkit-scrollbar-track {
   visibility: hidden;
   opacity: 0;
   transition: all 0.5s ease;
+  top: 0;
+  left: 0;
   position: absolute;
   width: 350px;
   height: 200px;
