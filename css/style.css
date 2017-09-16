@@ -190,7 +190,7 @@ body::-webkit-scrollbar-track {
 }
 
 #aboutme p {
-  max-width: 800px;
+  max-width: 600px;
   padding: 0px 50px;
   color: #2F4763;
 }
@@ -215,6 +215,7 @@ body::-webkit-scrollbar-track {
 
 #techskills h2 {
   color: #F2F2F2;
+  padding: 0px 10px;
 }
 
 #techskills ul {
