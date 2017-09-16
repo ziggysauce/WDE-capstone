@@ -30,7 +30,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-track {
-  background-color: #555;
+  background-color: #2F4763;
 }
 
 #container {
@@ -418,6 +418,9 @@ footer i:hover {
   }
   #projectlist a {
     font-size: 1.5em;
+  }
+  #intro, #contactme {
+    background: #2F4763 !important;
   }
   /* Mobile Nav Bar */
   .navbuttons li:not(:last-child) {
