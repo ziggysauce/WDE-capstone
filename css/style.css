@@ -130,11 +130,14 @@ body::-webkit-scrollbar-track {
 /*Home Tab*/
 #intro {
   height: 100vh;
-  position: relative;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: #2F4763;
+  /*background: #2F4763;*/
+  background-image: url("../images/back2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   color: #FFF;
 }
 
@@ -161,6 +164,7 @@ body::-webkit-scrollbar-track {
   padding: 25px 30px;
   font-size: 6em;
   border: 4px solid #FFB741;
+  /*color: #FFB741;*/
   color: #FFB741;
 }
 
@@ -305,9 +309,14 @@ body::-webkit-scrollbar-track {
 /*Contact Section*/
 #contactme {
   padding-top: 3em;
-  height: calc(100vh - 11em);
+  /*height: calc(100vh - 11em);*/
+  height: 100vh;
   position: relative;
-  background: #2F4763;
+  /*background: #2F4763;*/
+  background-image: url("../images/back1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   color: #F2F2F2;
 }
 
