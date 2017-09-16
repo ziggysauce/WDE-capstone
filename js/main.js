@@ -1,6 +1,5 @@
 $(document).ready(function() {
   navToggle();
-  iconToggle();
   scroll();
 });
 
@@ -10,19 +9,15 @@ function navToggle() {
     $('.navbuttons').addClass(' response');
     $('.navbuttons a').addClass(' showme');
     $('.navbar p').hide();
+    $('.navicon').addClass("active");
     $('a').click(function() {
       $('.navbar').removeClass(' mobile');
       $('.navbuttons').removeClass(' response');
       $('.navbuttons a').removeClass(' showme');
       $('.navbar p').show();
+      $('.navicon').removeClass("active");
       navToggle();
     });
-  });
-};
-
-function iconToggle() {
-  $('.navbuttons').click(function() {
-    $(this).toggleClass("active");
   });
 };
 
