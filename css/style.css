@@ -383,6 +383,9 @@ footer i:hover {
 
 /* Add media quieries */
 @media screen and (max-width:600px) {
+  html, body {
+    overflow-x: hidden;
+  }
   h1 {
     font-size: 2em !important;
   }
