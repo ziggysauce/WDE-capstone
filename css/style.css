@@ -395,11 +395,10 @@ footer i:hover {
   and (max-width:700px)
   and (orientation:landscape) {
     #intro, #contactme {
-      background-attachment: fixed;
       background-size: 100%;
     }
     .navbuttons a {
-      padding: 0 !important;
+      padding: 0px 10px !important;
     }
   }
 
