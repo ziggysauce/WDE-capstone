@@ -391,6 +391,18 @@ footer i:hover {
 }
 
 /* Add media quieries */
+@media screen
+  and (max-width:700px)
+  and (orientation:landscape) {
+    #intro, #contactme {
+      background-attachment: fixed;
+      background-size: 100%;
+    }
+    .navbuttons a {
+      padding: 0 !important;
+    }
+  }
+
 @media screen and (max-width:700px) {
   html, body {
     overflow-x: hidden;
@@ -420,9 +432,7 @@ footer i:hover {
     font-size: 1.5em;
   }
   #intro, #contactme {
-    /*background: #2F4763 !important;*/
-    background-attachment: scroll;
-    background-size: 100%;
+    background: #2F4763 !important;
   }
   /* Mobile Nav Bar */
   .navbuttons li:not(:last-child) {
