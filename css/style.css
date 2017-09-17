@@ -397,8 +397,14 @@ footer i:hover {
     #intro, #contactme {
       background-size: 100%;
     }
+    #intro {
+      background-image: url("../images/back2copy.jpg");
+    }
+    #contactme {
+      background-image: url("../images/back1copy.JPG");
+    }
     .navbuttons a {
-      padding: .75em !important;
+      padding: 0 !important;
     }
   }
 
