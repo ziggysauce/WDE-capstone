@@ -395,7 +395,7 @@ footer i:hover {
   and (max-width:700px)
   and (orientation:landscape) {
     #intro, #contactme {
-      background-size: contain;
+      background-size: 100%;
     }
     #intro {
       background-image: url("../images/back2copy.jpg") !important;
