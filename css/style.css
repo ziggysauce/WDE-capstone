@@ -398,7 +398,7 @@ footer i:hover {
       background-size: 100%;
     }
     .navbuttons a {
-      padding: 0px 10px !important;
+      margin: 5px !important;
     }
   }
 
