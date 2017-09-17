@@ -398,10 +398,10 @@ footer i:hover {
       background-size: 100%;
     }
     #intro {
-      background-image: url("../images/back2copy.jpg");
+      background-image: url("../images/back2copy.jpg") !important;
     }
     #contactme {
-      background-image: url("../images/back1copy.JPG");
+      background-image: url("../images/back1copy.JPG") !important;
     }
     .navbuttons a {
       padding: 0 !important;
