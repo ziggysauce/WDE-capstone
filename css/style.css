@@ -3,142 +3,6 @@
 /*Fonts*/
 @import url('https://fonts.googleapis.com/css?family=Molengo|Sigmar+One');
 
-/* Add media quieries */
-@media screen
-  and (max-width:700px)
-  and (orientation:landscape) {
-    #intro, #contactme {
-      background-size: contain;
-    }
-    #intro {
-      background-image: url("../images/back2copy.jpg") !important;
-    }
-    #contactme {
-      background-image: url("../images/back1copy.JPG") !important;
-    }
-    .navbuttons a {
-      padding: 0 !important;
-    }
-  }
-
-@media screen
-  and (max-width:700px)
-  and (orientation:portrait) {
-    html, body {
-      overflow-x: hidden;
-    }
-    h1 {
-      font-size: 2em !important;
-    }
-    h2, h3 {
-      font-size: 1.5em !important;
-    }
-    #hello {
-      font-size: 3em !important;
-    }
-    .titlebox {
-      margin: 0;
-      padding: 0;
-    }
-    .projectpics {
-      width: 275px;
-      height: 150px;;
-    }
-    #projectlist li:hover span{
-      width: 275px;
-      height: 150px;
-    }
-    #projectlist a {
-      font-size: 1.5em;
-    }
-    #intro, #contactme {
-      background: #2F4763 !important;
-    }
-    /* Mobile Nav Bar */
-    .navbuttons li:not(:last-child) {
-      display: none;
-    }
-    .navbuttons li:last-child {
-      display: inline-flex;
-      text-decoration: none;
-      font-size: 1.5em;
-      color: #2F4763;
-    }
-    .navbuttons a {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 100%;
-      font-size: 2em;
-    }
-    .navbuttons a:after {
-      display: none;
-    }
-    .mobile {
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      width: 100%;
-      position: fixed;
-      transition: all .5s ease;
-      -webkit-transition: all .5s ease;
-      -moz-transition: all .5s ease;
-    }
-    .response {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-    .showme {
-      display: flex !important;
-      flex-direction: column;
-      height: 100%;
-      width: 100%;
-    }
-    /*Hamburger Nav Bar*/
-    #stack {
-      display: flex;
-      flex-direction: column;
-    }
-    .iconbar:nth-of-type(1) {
-        top: -6px;
-        background: #2F4763;
-    }.iconbar:nth-of-type(2) {
-        top: 1px;
-        background: #2F4763;
-    }
-    .iconbar:nth-of-type(3) {
-        top: 8px;
-        background: #2F4763;
-    }
-    .iconbar {
-        position: relative;
-        width: 30px;
-        height: 2px;
-        transition: all 800ms ease-in-out;
-        -webkit-transition: all 800ms ease-in-out;
-        -moz-transition: all 800ms ease-in-out;
-    }
-    .active .iconbar:nth-of-type(1) {
-        top: 4px;
-        transition-delay: 500ms;
-        -webkit-transition-delay: 500ms;
-        -moz-transition-delay: 500ms;
-        transform: rotate(45deg);
-    }
-    .active .iconbar:nth-of-type(2) {
-        background-color: transparent;
-    }
-    .active .iconbar:nth-of-type(3) {
-        top: 0px;
-        transition-delay: 500ms;
-        -webkit-transition-delay: 500ms;
-        -moz-transition-delay: 500ms;
-        transform: rotate(-45deg);
-    }
-}
-
-
 p, h3, span, a {
   font-family: 'Molengo', sans-serif;
 }
@@ -524,4 +388,140 @@ footer i:hover {
 
 #footbottom {
   color: #555;
+}
+
+/* Add media quieries */
+@media screen
+  and (max-width:700px)
+  and (orientation:landscape) {
+    #intro, #contactme {
+      background-size: contain;
+    }
+    #intro {
+      /*background-image: url("../images/back2copy.jpg") !important;*/
+      background: #2F4763 !important;
+    }
+    #contactme {
+      background-image: url("../images/back1copy.JPG") !important;
+    }
+    .navbuttons a {
+      padding: 0 !important;
+    }
+  }
+
+@media screen
+  and (max-width:700px)
+  and (orientation:portrait) {
+    html, body {
+      overflow-x: hidden;
+    }
+    h1 {
+      font-size: 2em !important;
+    }
+    h2, h3 {
+      font-size: 1.5em !important;
+    }
+    #hello {
+      font-size: 3em !important;
+    }
+    .titlebox {
+      margin: 0;
+      padding: 0;
+    }
+    .projectpics {
+      width: 275px;
+      height: 150px;;
+    }
+    #projectlist li:hover span{
+      width: 275px;
+      height: 150px;
+    }
+    #projectlist a {
+      font-size: 1.5em;
+    }
+    #intro, #contactme {
+      background: #2F4763 !important;
+    }
+    /* Mobile Nav Bar */
+    .navbuttons li:not(:last-child) {
+      display: none;
+    }
+    .navbuttons li:last-child {
+      display: inline-flex;
+      text-decoration: none;
+      font-size: 1.5em;
+      color: #2F4763;
+    }
+    .navbuttons a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      font-size: 2em;
+    }
+    .navbuttons a:after {
+      display: none;
+    }
+    .mobile {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      transition: all .5s ease;
+      -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+    }
+    .response {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .showme {
+      display: flex !important;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+    }
+    /*Hamburger Nav Bar*/
+    #stack {
+      display: flex;
+      flex-direction: column;
+    }
+    .iconbar:nth-of-type(1) {
+        top: -6px;
+        background: #2F4763;
+    }.iconbar:nth-of-type(2) {
+        top: 1px;
+        background: #2F4763;
+    }
+    .iconbar:nth-of-type(3) {
+        top: 8px;
+        background: #2F4763;
+    }
+    .iconbar {
+        position: relative;
+        width: 30px;
+        height: 2px;
+        transition: all 800ms ease-in-out;
+        -webkit-transition: all 800ms ease-in-out;
+        -moz-transition: all 800ms ease-in-out;
+    }
+    .active .iconbar:nth-of-type(1) {
+        top: 4px;
+        transition-delay: 500ms;
+        -webkit-transition-delay: 500ms;
+        -moz-transition-delay: 500ms;
+        transform: rotate(45deg);
+    }
+    .active .iconbar:nth-of-type(2) {
+        background-color: transparent;
+    }
+    .active .iconbar:nth-of-type(3) {
+        top: 0px;
+        transition-delay: 500ms;
+        -webkit-transition-delay: 500ms;
+        -moz-transition-delay: 500ms;
+        transform: rotate(-45deg);
+    }
 }
