@@ -405,7 +405,7 @@ footer i:hover {
       background: #2F4763 !important;
     }
     .navbuttons a {
-      padding: 0 !important;
+      padding: 0px 10px !important;
     }
   }
 
