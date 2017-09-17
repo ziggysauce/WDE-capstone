@@ -391,7 +391,7 @@ footer i:hover {
 }
 
 /* Add media quieries */
-@media screen and (max-width:600px) {
+@media screen and (max-width:500px) {
   html, body {
     overflow-x: hidden;
   }
@@ -420,7 +420,8 @@ footer i:hover {
     font-size: 1.5em;
   }
   #intro, #contactme {
-    background: #2F4763 !important;
+    /*background: #2F4763 !important;*/
+    background-attachment: scroll;
   }
   /* Mobile Nav Bar */
   .navbuttons li:not(:last-child) {
