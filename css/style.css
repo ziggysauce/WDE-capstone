@@ -136,7 +136,7 @@ body::-webkit-scrollbar-track {
   /*background: #2F4763;*/
   background-image: url("../images/back2.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-attachment: fixed;
   color: #FFF;
 }
@@ -315,7 +315,7 @@ body::-webkit-scrollbar-track {
   /*background: #2F4763;*/
   background-image: url("../images/back1.JPG");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-attachment: fixed;
   color: #F2F2F2;
 }
