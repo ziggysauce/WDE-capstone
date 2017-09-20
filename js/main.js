@@ -41,6 +41,7 @@ function highlightNav() {
     if (ref.offset().top <= scrollPosition) {
       $('.navbuttons a').removeClass('activenav');
       currentId.addClass(' activenav');
+      $('.navicon').removeClass("activenav");
     }
     else {
       currentId.removeClass('activenav');
