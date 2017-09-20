@@ -62,8 +62,11 @@ body::-webkit-scrollbar-track {
 }
 
 .navbar p {
-  padding-left: 2em;
+  margin-left: 2em;
   color: #2F4763;
+  font-weight: 800;
+  padding: 2px;
+  border-bottom: 2px solid #FFB741;
 }
 
 .navbuttons {
