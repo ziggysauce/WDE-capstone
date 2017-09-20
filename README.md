@@ -14,6 +14,7 @@ Coursera UMICH Web Design for Everybody Capstone Final Project: Create a Persona
 * HTML5
 * CSS3
 * JavaScript
+* jQuery
 
 ## Deployment
 Open index.html
