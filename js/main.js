@@ -1,7 +1,9 @@
 $(document).ready(function() {
   navToggle();
   smoothScroll();
-  $(document).on("scroll", highlightNav);
+  if ($(window).width() >= 700) {
+    $(document).on("scroll", highlightNav);
+  }
 });
 
 // Create separate vertical navigation tab for smaller screen view
