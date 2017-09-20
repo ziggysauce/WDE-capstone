@@ -506,6 +506,9 @@ footer i:hover {
       width: 100%;
     }
     /*Hamburger Nav Bar*/
+    .activenav {
+      background: none !important;
+    }
     #stack {
       display: flex;
       flex-direction: column;
