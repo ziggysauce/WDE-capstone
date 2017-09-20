@@ -127,6 +127,11 @@ body::-webkit-scrollbar-track {
   display: none;
 }
 
+.activenav {
+  background-color: #FFB741 !important;
+  color: #FFF !important;
+}
+
 /*Home Tab*/
 #intro {
   height: 100vh;
@@ -336,6 +341,7 @@ body::-webkit-scrollbar-track {
   color: #FFB741;
   margin: 0;
   font-size: 4em;
+  letter-spacing: 2px;
 }
 
 .email {
