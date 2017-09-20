@@ -7,7 +7,6 @@ $(document).ready(function() {
 // Create separate vertical navigation tab for smaller screen view
 function navToggle() {
   $('.navicon').click(function() {
-    $('.navbuttons a').removeClass('activenav');
     $('.navbar').addClass(' mobile');
     $('.navbuttons').addClass(' response');
     $('.navbuttons li').addClass(' showme');
@@ -41,7 +40,6 @@ function highlightNav() {
     if (ref.offset().top <= scrollPosition) {
       $('.navbuttons a').removeClass('activenav');
       currentId.addClass(' activenav');
-      $('.navicon').removeClass("activenav");
     }
     else {
       currentId.removeClass('activenav');
