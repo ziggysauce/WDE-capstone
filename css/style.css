@@ -481,6 +481,9 @@ footer i:hover {
       width: 100%;
       font-size: 2em;
     }
+    .navbuttons a:hover {
+      display: none;
+    }
     .navbuttons a:after {
       display: none;
     }
