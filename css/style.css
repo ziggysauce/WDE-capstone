@@ -482,10 +482,12 @@ footer i:hover {
       font-size: 2em;
     }
     .navbuttons a:hover {
-      display: none;
+      background-color: #DBDBDB !important;
+      color: #2F4763 !important;
     }
     .navbuttons a:after {
-      display: none;
+      background-color: #DBDBDB !important;
+      color: #2F4763 !important;
     }
     .mobile {
       display: flex;
