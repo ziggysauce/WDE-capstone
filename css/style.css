@@ -143,13 +143,16 @@ body::-webkit-scrollbar-track {
 
 .introbox {
   align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  border: 4px solid #FFB741;
+
 }
 
 .titlebox {
   justify-content: center;
   align-items: center;
   height: 2em;
-  padding: 10px;
+  padding-bottom: 2em;
   margin-top: -4em;
 }
 
@@ -161,9 +164,8 @@ body::-webkit-scrollbar-track {
 }
 
 #hello {
-  padding: 25px 30px;
+  padding: 0px 30px;
   font-size: 6em;
-  border: 4px solid #FFB741;
   /*color: #FFB741;*/
   color: #FFB741;
 }
@@ -220,6 +222,7 @@ body::-webkit-scrollbar-track {
 #techskills h2 {
   color: #F2F2F2;
   padding: 0px 10px;
+  letter-spacing: 3px;
 }
 
 #techskills ul {
@@ -346,6 +349,7 @@ body::-webkit-scrollbar-track {
   text-decoration: none;
   transition: all 0.5s ease-in;
   color: #F2F2F2;
+  background: rgba(0,0,0,0.3);
 }
 
 .email i {
@@ -423,6 +427,12 @@ footer i:hover {
     }
     #hello {
       font-size: 3em !important;
+      border: 4px solid #FFB741;
+      padding: 1em;
+    }
+    .introbox {
+      border: none;
+      background: none;
     }
     .titlebox {
       margin: 0;
@@ -441,6 +451,9 @@ footer i:hover {
     }
     #intro, #contactme {
       background: #2F4763 !important;
+    }
+    .email {
+      background: none;
     }
     /* Mobile Nav Bar */
     .navbuttons li:not(:last-child) {
