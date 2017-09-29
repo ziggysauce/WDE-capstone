@@ -142,7 +142,7 @@ body::-webkit-scrollbar-track {
   align-items: center;
   text-align: center;
   /*background: #2F4763;*/
-  background-image: url("../images/back2.jpg");
+  background-image: url("https://s19.postimg.org/3re6ohpvn/back2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -324,7 +324,7 @@ body::-webkit-scrollbar-track {
   height: 100vh;
   position: relative;
   /*background: #2F4763;*/
-  background-image: url("../images/back1.JPG");
+  background-image: url("https://s19.postimg.org/xuspgft4z/back1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -411,7 +411,7 @@ footer i:hover {
       background-size: 100%;
     }
     #intro {
-      background-image: url("../images/back2copy.jpg") !important;
+      background-image: url("https://s19.postimg.org/hh8pxaczn/back2copy.jpg") !important;
     }
     #contactme {
       /*background-image: url("../images/back2copy.jpg") !important;*/
